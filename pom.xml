@@ -30,9 +30,28 @@
 
     <cobertura.version>2.7</cobertura.version>
 
+    <!-- dependency versions -->
+    <fabric8.version>2.2.192</fabric8.version>
+    <spring-boot.version>1.4.3.RELEASE</spring-boot.version>
+
+    <!-- maven plugin versions -->
+    <fabric8.maven.plugin.version>3.2.13</fabric8.maven.plugin.version>
+    <exec-maven-plugin.version>1.5.0</exec-maven-plugin.version>
+    <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+    <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
+    <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+
   </properties>
 
   <dependencies>
+      <!-- import fabric8 platform bom first -->
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-project-bom-with-platform-deps</artifactId>
+        <version>${fabric8.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -223,7 +242,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>${spring-boot.version}</version>
+        <version>1.5.4.RELEASE</version>
         <configuration>
           <mainClass>org.example.App</mainClass>
         </configuration>
