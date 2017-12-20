@@ -244,7 +244,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>1.5.4.RELEASE</version>
         <configuration>
-          <mainClass>org.example.App</mainClass>
+          <mainClass>org.springframework.samples.petclinic.PetClinicApplication</mainClass>
         </configuration>
         <executions>
           <execution>
