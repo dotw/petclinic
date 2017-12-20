@@ -50,7 +50,7 @@
         <artifactId>fabric8-project-bom-with-platform-deps</artifactId>
         <version>${fabric8.version}</version>
         <type>pom</type>
-        <scope>import</scope>
+        <scope>compile</scope>
       </dependency>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
