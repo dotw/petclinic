@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 class HealthController {
 
     @GetMapping("/health")
-    public String showVetList() {
+    public String showHealth() {
         return "welcome";
     }
 }
