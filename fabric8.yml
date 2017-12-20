@@ -1,0 +1,9 @@
+---
+buildName: "petclinic"
+links:
+  Git: "http://github.com/dotw/petclinic.git"
+  Job: "http://10.0.0.20:80/job/petclinic"
+environments:
+  Testing: "devopsns-testing"
+  Staging: "devopsns-staging"
+useLocalFlow: true
